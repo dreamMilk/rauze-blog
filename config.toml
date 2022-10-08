@@ -1,4 +1,4 @@
-baseURL = 'https://dreamMilk.github.io/'
+baseURL = 'https://dreammilk.github.io/rauze-blog/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'anatole'
