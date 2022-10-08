@@ -1,4 +1,4 @@
-baseURL = 'http://rauze.ml/'
+baseURL = 'http://rauze.ml/rauze-blog'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'anatole'
