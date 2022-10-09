@@ -7,10 +7,10 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
-# 工具选择
+## 工具选择
 
 **`搭建框架Hugo+服务器GithubPage+域名Freenom=本博客`**
 
-**这些工具都是免费使用的，只需要时间**
+这些工具都是免费使用的，只需要时间
