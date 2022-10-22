@@ -32,13 +32,13 @@
 &lt;p>家庭能耗的主要组成部分是照明和空调使用，这两种行为主要和环境相关，有学者通过数据分析以及拟合生成了对应的公式模型。&lt;/p>
 &lt;h2 id="基于智能体建模agent-based-modellingabm">基于智能体建模（Agent-Based Modelling，ABM）&lt;/h2>
 &lt;p>这里的智能体（agent）只是对上文中人员的另一种说法，而在建筑能耗模拟领域，基于智能体建模就是推导一个输入人员移动模型和人员用能行为，输出建筑能耗的模型。&lt;/p>
-&lt;p>&lt;img src="https://file&amp;#43;.vscode-resource.vscode-cdn.net/d%3A/software/hugo_extended_0.104.3_windows-amd64/rauze-blog/content/post/ABM%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666353931428.png?nonce%3D1666418869228"
+&lt;p>&lt;img src="https://rauze.ml/image%5cindex%5c1666353931428.png"
 loading="lazy"
-alt="1666353931428.png"
+alt="简单流程图"
 >&lt;/p>
 &lt;p>在实际建模中还可以考虑政策法规、设备管理和相关技术等影响因素。&lt;/p>
 &lt;h2 id="建模方法和工具">建模方法和工具&lt;/h2>
-&lt;h3 id="1netlogo">1、NetLogo&lt;/h3>
+&lt;h3 id="netlogo">NetLogo&lt;/h3>
 &lt;blockquote>
 &lt;p>&lt;strong>&lt;a class="link" href="https://ccl.northwestern.edu/netlogo/" title="Netlogo官方网站"
 target="_blank" rel="noopener"
@@ -50,20 +50,20 @@ width="885"
 height="855"
 srcset="https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666420071371_hu50b4d7ce97e249be881d33da6cd425fd_136763_480x0_resize_box_3.png 480w, https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666420071371_hu50b4d7ce97e249be881d33da6cd425fd_136763_1024x0_resize_box_3.png 1024w"
 loading="lazy"
-alt="1666420071371"
+alt="模拟狼羊种群数量变化"
 class="gallery-image"
 data-flex-grow="103"
 data-flex-basis="248px"
 >&lt;/p>
-&lt;h3 id="2生成事件序列">2、生成事件序列&lt;/h3>
+&lt;h3 id="生成事件序列">生成事件序列&lt;/h3>
 &lt;p>生成事件序列时，使用固定作息法生成周期性事件（吃饭、睡觉、洗澡），BARABASI优先队列模型生成非周期性事件（外出、娱乐），同一时段存在两种事件时，优先执行周期性事件（该睡觉时不进行其他非周期活动）。&lt;/p>
-&lt;h3 id="3用能动作控制">3、用能动作控制&lt;/h3>
+&lt;h3 id="用能动作控制">用能动作控制&lt;/h3>
 &lt;p>通过人员位置和环境以及需要执行的事件，判断人员接下来会使用什么设备，其中判断需要依靠相关经验公式。例如人员在室内，周围的气温很热，那么他肯定会开空调进行温度调节。&lt;/p>
 &lt;h2 id="引用">引用&lt;/h2>
-&lt;p>[1]潘阳阳.(2017).居住建筑人员用能随机行为模型研究(硕士学位论文,浙江大学).&lt;a class="link" href="https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFD201801&amp;amp;filename=1017258493.nh" target="_blank" rel="noopener"
->https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFD201801&amp;amp;filename=1017258493.nh&lt;/a>&lt;/p>
-&lt;p>[2]张智慧.(2020).基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究(硕士学位论文,厦门大学).&lt;a class="link" href="https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFDTEMP&amp;amp;filename=1020063482.nh" target="_blank" rel="noopener"
->https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFDTEMP&amp;amp;filename=1020063482.nh&lt;/a>&lt;/p></description></item><item><title>博客搭建过程</title><link>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link><pubDate>Sun, 09 Oct 2022 19:35:16 +0800</pubDate><guid>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid><description>&lt;h2 id="工具选择">工具选择&lt;/h2>
+&lt;p>[1]&lt;a class="link" href="https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&amp;amp;dbname=CMFD201801&amp;amp;filename=1017258493.nh&amp;amp;uniplatform=OVERSEA&amp;amp;v=-n2yZzUGNR3AZFzV9lMDMIBpKFf4rNhM7RUgDG_vQ5EpNJANBwRR_Gp8c-Xfgkbt" target="_blank" rel="noopener"
+>潘阳阳. 居住建筑人员用能随机行为模型研究[D]. 浙江大学, 2017.&lt;/a>&lt;/p>
+&lt;p>[2]&lt;a class="link" href="https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&amp;amp;dbname=CMFDTEMP&amp;amp;filename=1020063482.nh&amp;amp;uniplatform=OVERSEA&amp;amp;v=QK-yUP7WQfMa3QDxlkjAc3WBPIDMtVYes5YAnCiFFkO21bfTqhKLkzNDP6MB2LgB" target="_blank" rel="noopener"
+>张智慧. 基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究[D].厦门大学,2020.&lt;/a>&lt;/p></description></item><item><title>博客搭建过程</title><link>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link><pubDate>Sun, 09 Oct 2022 19:35:16 +0800</pubDate><guid>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid><description>&lt;h2 id="工具选择">工具选择&lt;/h2>
 &lt;p>&lt;strong>&lt;code>搭建框架Hugo+服务器GithubPage+域名Freenom=本博客&lt;/code>&lt;/strong>&lt;/p>
 &lt;p>这些工具都是免费使用的，只需要时间&lt;/p>
 &lt;h2 id="hugo框架">Hugo框架&lt;/h2>
