@@ -95,6 +95,6 @@ draft: false
 
 ## 引用
 
-[1][潘阳阳. 居住建筑人员用能随机行为模型研究[D]. 浙江大学, 2017.](https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201801&filename=1017258493.nh&uniplatform=OVERSEA&v=-n2yZzUGNR3AZFzV9lMDMIBpKFf4rNhM7RUgDG_vQ5EpNJANBwRR_Gp8c-Xfgkbt)
+[1][潘阳阳. 居住建筑人员用能随机行为模型研究\[D\]. 浙江大学, 2017.](https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201801&filename=1017258493.nh&uniplatform=OVERSEA&v=-n2yZzUGNR3AZFzV9lMDMIBpKFf4rNhM7RUgDG_vQ5EpNJANBwRR_Gp8c-Xfgkbt)
 
-[2][张智慧. 基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究[D].厦门大学,2020.](https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFDTEMP&filename=1020063482.nh&uniplatform=OVERSEA&v=QK-yUP7WQfMa3QDxlkjAc3WBPIDMtVYes5YAnCiFFkO21bfTqhKLkzNDP6MB2LgB)
+[2][张智慧. 基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究\[D\].厦门大学,2020.](https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFDTEMP&filename=1020063482.nh&uniplatform=OVERSEA&v=QK-yUP7WQfMa3QDxlkjAc3WBPIDMtVYes5YAnCiFFkO21bfTqhKLkzNDP6MB2LgB)
