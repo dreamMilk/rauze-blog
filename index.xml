@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rauze blog</title><link>https://rauze.ml/</link><description>Recent content on Rauze blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Oct 2022 19:35:16 +0800</lastBuildDate><atom:link href="https://rauze.ml/index.xml" rel="self" type="application/rss+xml"/><item><title>博客搭建过程</title><link>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link><pubDate>Sun, 09 Oct 2022 19:35:16 +0800</pubDate><guid>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid><description>&lt;h2 id="工具选择">工具选择&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rauze blog</title><link>https://rauze.ml/</link><description>Recent content on Rauze blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Oct 2022 15:24:15 +0800</lastBuildDate><atom:link href="https://rauze.ml/index.xml" rel="self" type="application/rss+xml"/><item><title>ABM相关方法研究状况</title><link>https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/</link><pubDate>Fri, 21 Oct 2022 15:24:15 +0800</pubDate><guid>https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/</guid><description>&lt;h2 id="相关背景">相关背景&lt;/h2>
+&lt;p>建筑能耗与人员移动行为和人员用能行为密切相关，为模拟建筑能耗相关信息，需要研究人什么时刻在什么房间（人员移动模型）和人在房间如何使用耗能设备（人员用能行为）&lt;/p>
+&lt;h3 id="人员移动模型">人员移动模型&lt;/h3>
+&lt;p>建筑中的人员移动具有四个特点：&lt;/p>
+&lt;ul>
+&lt;li>一定的规律性。人员每天的活动具有一定的规律性&lt;/li>
+&lt;li>一定的随机性。特别在个人建筑空间中，每天的活动不完全相同&lt;/li>
+&lt;li>时间和空间上的自相关性。将建筑以外的环境视为一个名为户外的房间，所有房间的人员总数是固定的，不会凭空产生一个人，也不会凭空消失一个人&lt;/li>
+&lt;li>多人之间的差异性。每个人都有自己的想法，不会只存在一种移动行为&lt;/li>
+&lt;/ul>
+&lt;p>其实上面的特点和生活是息息相关的。一个人每天总是要睡觉、起床和吃饭（规律性）；但是每天还有各种各样的突发事件和计划（随机性）；当你离开一个房间（空间）的时候，你肯定会进入其他房间（空间）（自相关性）；你和其他人之间存在差异，可能你不喜欢动，其他人喜欢四处走动（差异性）&lt;/p>
+&lt;p>下面介绍各种人员移动模型&lt;/p>
+&lt;h4 id="固定作息方法">固定作息方法&lt;/h4>
+&lt;p>每个人员有一张固定的作息时间表，每个时刻应该在什么地方都进行安排，认为人员会严格执行作息时间表的规划。&lt;/p>
+&lt;p>&lt;strong>优点：&lt;/strong> 实现简单&lt;/p>
+&lt;p>&lt;strong>缺点：&lt;/strong> 没有随机性和差异性&lt;/p>
+&lt;hr>
+&lt;h4 id="随机作息方法">随机作息方法&lt;/h4>
+&lt;p>在固定作息方法的基础上考虑了随机性，假设每个房间的人数存在一个分布规律，在固定作息时间表的各时段通过蒙特卡洛法随机产生人数。&lt;/p>
+&lt;p>&lt;strong>优点：&lt;/strong> 实现了随机性，并且简单&lt;/p>
+&lt;p>&lt;strong>缺点：&lt;/strong> 没有自相关性，可能某个时段会突然总人数变多或变少，违背常理&lt;/p>
+&lt;hr>
+&lt;h4 id="时自相关的随机移动方法">时自相关的随机移动方法&lt;/h4>
+&lt;p>考虑自相关的特点，有学者发现办公室人员的行为特征符合某种分布，例如在办公室的时长与不在的时长满足指数分布，上下班和午休满足正态分布。此外还有非齐次的马尔科夫链模拟人员在办公室的变化以及建筑总人数变化。&lt;/p>
+&lt;p>&lt;strong>优点：&lt;/strong> 考虑完善&lt;/p>
+&lt;p>&lt;strong>缺点：&lt;/strong> 相关模型参数依赖长期监测，复杂且成本高&lt;/p>
+&lt;hr>
+&lt;h4 id="基于事件的随机移动方法">基于事件的随机移动方法&lt;/h4>
+&lt;p>前面的方法都是随机的移动，但是人类的移动都是有目的性的，于是通过构造人员的事件模拟真实的移动，利用概率统计和s-curve法预测突发事件发生概率和频率，通过日常规律事件和随机的突发事件就可以模拟实际的事件。&lt;/p>
+&lt;hr>
+&lt;h3 id="人员用能行为">人员用能行为&lt;/h3>
+&lt;p>家庭能耗的主要组成部分是照明和空调使用，这两种行为主要和环境相关，有学者通过数据分析以及拟合生成了对应的公式模型。&lt;/p>
+&lt;h2 id="基于智能体建模agent-based-modellingabm">基于智能体建模（Agent-Based Modelling，ABM）&lt;/h2>
+&lt;p>这里的智能体（agent）只是对上文中人员的另一种说法，而在建筑能耗模拟领域，基于智能体建模就是推导一个输入人员移动模型和人员用能行为，输出建筑能耗的模型。&lt;/p>
+&lt;p>&lt;img src="https://file&amp;#43;.vscode-resource.vscode-cdn.net/d%3A/software/hugo_extended_0.104.3_windows-amd64/rauze-blog/content/post/ABM%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666353931428.png?nonce%3D1666418869228"
+loading="lazy"
+alt="1666353931428.png"
+>&lt;/p>
+&lt;p>在实际建模中还可以考虑政策法规、设备管理和相关技术等影响因素。&lt;/p>
+&lt;h2 id="建模方法和工具">建模方法和工具&lt;/h2>
+&lt;h3 id="1netlogo">1、NetLogo&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;strong>&lt;a class="link" href="https://ccl.northwestern.edu/netlogo/" title="Netlogo官方网站"
+target="_blank" rel="noopener"
+>NetLogo&lt;/a>&lt;/strong> 是一个可编程的建模环境，用于模拟自然和社会现象。特别适合对随时间推移而开发的复杂系统进行建模。建模人员可以向数百或数千个独立操作的“代理”发出指令。这使得探索个体的微观层面行为与从其相互作用中产生的宏观层面模式之间的联系成为可能。&lt;/p>
+&lt;/blockquote>
+&lt;p>正是因为NetLogo可以向数个agent发出指令，并且让每个个体之间产生联系和相互作用，所以适合模拟现实生活中的场景。例如下面的案例&lt;/p>
+&lt;p>&lt;img src="https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666420071371.png"
+width="885"
+height="855"
+srcset="https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666420071371_hu50b4d7ce97e249be881d33da6cd425fd_136763_480x0_resize_box_3.png 480w, https://rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666420071371_hu50b4d7ce97e249be881d33da6cd425fd_136763_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1666420071371"
+class="gallery-image"
+data-flex-grow="103"
+data-flex-basis="248px"
+>&lt;/p>
+&lt;h3 id="2生成事件序列">2、生成事件序列&lt;/h3>
+&lt;p>生成事件序列时，使用固定作息法生成周期性事件（吃饭、睡觉、洗澡），BARABASI优先队列模型生成非周期性事件（外出、娱乐），同一时段存在两种事件时，优先执行周期性事件（该睡觉时不进行其他非周期活动）。&lt;/p>
+&lt;h3 id="3用能动作控制">3、用能动作控制&lt;/h3>
+&lt;p>通过人员位置和环境以及需要执行的事件，判断人员接下来会使用什么设备，其中判断需要依靠相关经验公式。例如人员在室内，周围的气温很热，那么他肯定会开空调进行温度调节。&lt;/p>
+&lt;h2 id="引用">引用&lt;/h2>
+&lt;p>[1]潘阳阳.(2017).居住建筑人员用能随机行为模型研究(硕士学位论文,浙江大学).&lt;a class="link" href="https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFD201801&amp;amp;filename=1017258493.nh" target="_blank" rel="noopener"
+>https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFD201801&amp;amp;filename=1017258493.nh&lt;/a>&lt;/p>
+&lt;p>[2]张智慧.(2020).基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究(硕士学位论文,厦门大学).&lt;a class="link" href="https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFDTEMP&amp;amp;filename=1020063482.nh" target="_blank" rel="noopener"
+>https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFDTEMP&amp;amp;filename=1020063482.nh&lt;/a>&lt;/p></description></item><item><title>博客搭建过程</title><link>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link><pubDate>Sun, 09 Oct 2022 19:35:16 +0800</pubDate><guid>https://rauze.ml/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid><description>&lt;h2 id="工具选择">工具选择&lt;/h2>
 &lt;p>&lt;strong>&lt;code>搭建框架Hugo+服务器GithubPage+域名Freenom=本博客&lt;/code>&lt;/strong>&lt;/p>
 &lt;p>这些工具都是免费使用的，只需要时间&lt;/p>
 &lt;h2 id="hugo框架">Hugo框架&lt;/h2>
