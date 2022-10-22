@@ -2,6 +2,7 @@
 title: "ABM相关方法研究状况"
 description: 
 date: 2022-10-21T15:24:15+08:00
+keywords: ["ABM","NetLogo"]
 image: 
 math: 
 license: 
@@ -70,30 +71,30 @@ draft: false
 
 这里的智能体（agent）只是对上文中人员的另一种说法，而在建筑能耗模拟领域，基于智能体建模就是推导一个输入人员移动模型和人员用能行为，输出建筑能耗的模型。
 
-![1666353931428.png](https://file+.vscode-resource.vscode-cdn.net/d%3A/software/hugo_extended_0.104.3_windows-amd64/rauze-blog/content/post/ABM%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666353931428.png?nonce%3D1666418869228 "简单流程图")
+![简单流程图](image\index\1666353931428.png "简单流程图")
 
 在实际建模中还可以考虑政策法规、设备管理和相关技术等影响因素。
 
 ## 建模方法和工具
 
-### 1、NetLogo
+### NetLogo
 
 > **[NetLogo](https://ccl.northwestern.edu/netlogo/ "Netlogo官方网站")** 是一个可编程的建模环境，用于模拟自然和社会现象。特别适合对随时间推移而开发的复杂系统进行建模。建模人员可以向数百或数千个独立操作的“代理”发出指令。这使得探索个体的微观层面行为与从其相互作用中产生的宏观层面模式之间的联系成为可能。
 
 正是因为NetLogo可以向数个agent发出指令，并且让每个个体之间产生联系和相互作用，所以适合模拟现实生活中的场景。例如下面的案例
 
-![1666420071371](image/index/1666420071371.png "模拟狼羊种群数量变化")
+![模拟狼羊种群数量变化](image/index/1666420071371.png "模拟狼羊种群数量变化")
 
-### 2、生成事件序列
+### 生成事件序列
 
 生成事件序列时，使用固定作息法生成周期性事件（吃饭、睡觉、洗澡），BARABASI优先队列模型生成非周期性事件（外出、娱乐），同一时段存在两种事件时，优先执行周期性事件（该睡觉时不进行其他非周期活动）。
 
-### 3、用能动作控制
+### 用能动作控制
 
 通过人员位置和环境以及需要执行的事件，判断人员接下来会使用什么设备，其中判断需要依靠相关经验公式。例如人员在室内，周围的气温很热，那么他肯定会开空调进行温度调节。
 
 ## 引用
 
-[1]潘阳阳.(2017).居住建筑人员用能随机行为模型研究(硕士学位论文,浙江大学).[https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFD201801&amp;filename=1017258493.nh](https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFD201801&filename=1017258493.nh)
+[1][潘阳阳. 居住建筑人员用能随机行为模型研究[D]. 浙江大学, 2017.](https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201801&filename=1017258493.nh&uniplatform=OVERSEA&v=-n2yZzUGNR3AZFzV9lMDMIBpKFf4rNhM7RUgDG_vQ5EpNJANBwRR_Gp8c-Xfgkbt)
 
-[2]张智慧.(2020).基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究(硕士学位论文,厦门大学).[https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFDTEMP&amp;filename=1020063482.nh](https://kns-cnki-net-443.vpn3.fjnu.edu.cn/KCMS/detail/detail.aspx?dbname=CMFDTEMP&filename=1020063482.nh)
+[2][张智慧. 基于智能体建模与多目标优化相结合的综合能源系统规划运行方法研究[D].厦门大学,2020.](https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFDTEMP&filename=1020063482.nh&uniplatform=OVERSEA&v=QK-yUP7WQfMa3QDxlkjAc3WBPIDMtVYes5YAnCiFFkO21bfTqhKLkzNDP6MB2LgB)
