@@ -32,9 +32,15 @@
 &lt;p>家庭能耗的主要组成部分是照明和空调使用，这两种行为主要和环境相关，有学者通过数据分析以及拟合生成了对应的公式模型。&lt;/p>
 &lt;h2 id="基于智能体建模agent-based-modellingabm">基于智能体建模（Agent-Based Modelling，ABM）&lt;/h2>
 &lt;p>这里的智能体（agent）只是对上文中人员的另一种说法，而在建筑能耗模拟领域，基于智能体建模就是推导一个输入人员移动模型和人员用能行为，输出建筑能耗的模型。&lt;/p>
-&lt;p>&lt;img src="https://www.rauze.ml/image%5cindex%5c1666353931428.png"
+&lt;p>&lt;img src="https://www.rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666353931428.png"
+width="368"
+height="255"
+srcset="https://www.rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666353931428_huc0a2fa51f09d47a50de8fa1310599034_7533_480x0_resize_box_3.png 480w, https://www.rauze.ml/p/abm%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%8A%B6%E5%86%B5/image/index/1666353931428_huc0a2fa51f09d47a50de8fa1310599034_7533_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="简单流程图"
+class="gallery-image"
+data-flex-grow="144"
+data-flex-basis="346px"
 >&lt;/p>
 &lt;p>在实际建模中还可以考虑政策法规、设备管理和相关技术等影响因素。&lt;/p>
 &lt;h2 id="建模方法和工具">建模方法和工具&lt;/h2>
