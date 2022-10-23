@@ -70,14 +70,14 @@ params:
 
     comments:
         enabled: true
-        provider: cusdis
+        provider: disqusjs
 
         disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
+            shortname: rauze
+            apiUrl: https://disqus.skk.moe/disqus/
+            apiKey: TJjei3xjzbPGpzjt2rmSaBmWrPcF4jv4MTwFaGye4y1UJv2ePd1Nxx0nOdEc3Xy9
+            admin: disqus_3JFAKT6OeU
+            adminLabel: 管理员
 
         utterances:
             repo:
